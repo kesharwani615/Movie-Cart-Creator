@@ -6,7 +6,8 @@ const {signup}=require('./model/Signup')
 const {connectMongoDB}=require('./ConnectMongo');
 const {setUserLogin}=require('./AuthUserLogin')
 
-connectMongoDB('mongodb://127.0.0.1:27017/FilmyVerse')
+
+connectMongoDB('mongodb+srv://kesharwanishivam615:shivam30@cluster0.o1fpakq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>console.log('MongoDB Connected!'))
 .catch(()=>{'something went worng!'})
 
